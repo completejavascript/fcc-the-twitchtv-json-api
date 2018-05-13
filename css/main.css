@@ -6,6 +6,10 @@ body {
   background-color: #efefef;
   font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
 }
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
 header {
   background-color: #6441A4;
   color: #fff;
@@ -21,8 +25,8 @@ header p {
   text-align: justify;
   color: #eee;
 }
-header a {color: #68efad;}
-header a:hover{color: #5fd89e;}
+header a, .item a {color: #68efad;}
+header a:hover, .item a:hover{color: #5fd89e;}
 .my-transition {
   transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
@@ -37,4 +41,42 @@ header a:hover{color: #5fd89e;}
   box-shadow: 0 2px 5px rgba(0,0,0,0.12), 0 3px 5px rgba(0,0,0,0.24);
   -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.12), 0 3px 5px rgba(0,0,0,0.24);
   -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.12), 0 3px 5px rgba(0,0,0,0.24);
+}
+.channels .item {
+  background-color: #fff;
+  margin-top: 15px;
+  padding: 15px;
+}
+.channels .item .logo-name-wrapper .logo img{
+  border: 5px solid #6441A4;
+  border-radius: 50%;
+}
+.channels .item.offline { border-left: 5px solid #fe4a49;}
+.channels .item.online { border-left: 5px solid #68efad;}
+.channels .item.closed { border-left: 5px solid #999;}
+.channels .item .logo-name-wrapper {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+}
+.channels .item .logo-name-wrapper .name {
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 70%;
+    min-width: 700px;
+  }
+  .channels .item {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+  }
+  .channels .item .logo-name-wrapper { flex: 1; }
+  .channels .item .status { flex: 1; }
+}
+
+@media (min-width: 992px) {
+
 }
