@@ -17,15 +17,33 @@
     <header class="box my-transition">
       <h1>Twitch App</h1>
       <p>A simple Twitch app displaying channel streaming status by
-        <a class="my-transition" href="http://about.phamvanlam.com">Lam Pham</a>.</p>
+        <a class="my-transition" href="http://about.phamvanlam.com">Lam Pham</a>.
+      </p>
+      <div class="filter">
+        <span class="option my-transition all active">All</span>
+        <span class="option my-transition online">Online</span>
+        <span class="option my-transition offline">Offline</span>
+      </div>
+      <i class="fa fa-refresh refresh my-transition"></i>
     </header>
 
     <section class="channels">
     </section>
+
+    <section class="add">
+      <form>
+        <div class="input_wrapper box my-transition">
+          <input type="text" name="add_channel" placeholder="Enter twitchtv's username to follow..." required>
+        </div>
+        <button class="box my-transition">ADD</button>
+      </form>
+    </section>
   </div>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="./js//main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./js/app-storage.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
