@@ -1,49 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="An intermediate front-end project on freecodecamp - use the twitchtv json api"
+    />
+    <meta
+      name="keywords"
+      content="fcc, freecodecamp, twitchtv, twitch-tv, twitch-api, twitchtv-json-api"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="An intermediate front-end project on freecodecamp - use the twitchtv json api">
-  <meta name="keywords" content="fcc, freecodecamp, twitchtv, twitch-tv, twitch-api, twitchtv-json-api">
+    <title>Use the TwitchTV JSON API - Lam Pham</title>
+    <link rel="stylesheet" href="./css/main.css" />
 
-  <title>Use the TwitchTV JSON API - Lam Pham</title>
-  <link rel="stylesheet" href="./css/main.css">
-</head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-96543695-6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-96543695-6");
+    </script>
+  </head>
 
-<body>
-  <div class="container">
-    <header class="box my-transition">
-      <h1>Twitch App</h1>
-      <p>A simple Twitch app displaying channel streaming status by
-        <a class="my-transition" href="http://about.phamvanlam.com">Lam Pham</a>.
-      </p>
-      <div class="filter">
-        <span class="option my-transition all active">All</span>
-        <span class="option my-transition online">Online</span>
-        <span class="option my-transition offline">Offline</span>
-      </div>
-      <i class="fa fa-refresh refresh my-transition"></i>
-    </header>
-
-    <section class="channels">
-    </section>
-
-    <section class="add">
-      <form>
-        <div class="input_wrapper box my-transition">
-          <input type="text" name="add_channel" placeholder="Enter twitchtv's username to follow..." required>
+  <body>
+    <div class="container">
+      <header class="box my-transition">
+        <h1>Twitch App</h1>
+        <p>
+          A simple Twitch app displaying channel streaming status by
+          <a class="my-transition" href="http://about.phamvanlam.com"
+            >Lam Pham</a
+          >.
+        </p>
+        <div class="filter">
+          <span class="option my-transition all active">All</span>
+          <span class="option my-transition online">Online</span>
+          <span class="option my-transition offline">Offline</span>
         </div>
-        <button class="box my-transition">ADD</button>
-      </form>
-    </section>
-  </div>
+        <i class="fa fa-refresh refresh my-transition"></i>
+      </header>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="./js/app-storage.js"></script>
-  <script src="./js/main.js"></script>
-</body>
+      <section class="channels"></section>
 
+      <section class="add">
+        <form>
+          <div class="input_wrapper box my-transition">
+            <input
+              type="text"
+              name="add_channel"
+              placeholder="Enter twitchtv's username to follow..."
+              required
+            />
+          </div>
+          <button class="box my-transition">ADD</button>
+        </form>
+      </section>
+    </div>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/app-storage.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
